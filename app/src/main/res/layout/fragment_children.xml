@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textPrimary">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:layout_marginBottom="2px"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <com.doanminhtien.chandoantuky.CircleImageView
+                    android:layout_width="@dimen/child_ava_height"
+                    android:layout_height="@dimen/child_ava_height"
+                    android:src="@drawable/tre_tu_ky_sample"
+                    app:civ_border_width="5dp"
+                    app:civ_border_color="@color/textPrimary"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/tool_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="@dimen/tool_width"
+                    android:layout_height="@dimen/tool_width" />
+
+                <ImageButton
+                    android:layout_width="@dimen/tool_width"
+                    android:layout_height="@dimen/tool_width" />
+
+                <ImageButton
+                    android:layout_width="@dimen/tool_width"
+                    android:layout_height="@dimen/tool_width" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/child_name_container">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:text="DOAN MINH TIEN"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="@dimen/textSizeTitle"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/textPrimary"
+                android:layout_marginBottom="2px"
+                android:id="@+id/child_name"
+                />
+            <ImageView
+                android:layout_width="@dimen/title_height"
+                android:layout_height="@dimen/title_height"
+                android:layout_gravity="end"
+                android:background="@drawable/ic_action_keyboard_arrow_right"
+                android:id="@+id/child_name_off"/>
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/basic_infor_container"
+            android:visibility="gone"
+            android:padding="10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of birth: 1995-09-19"
+                android:textSize="@dimen/normalTextSize"
+                android:id="@+id/date_of_birth"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Father name: Doan Minh Tien"
+                android:textSize="@dimen/normalTextSize"
+                android:id="@+id/father_name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mother name: Doan Minh Tien"
+                android:textSize="@dimen/normalTextSize"
+                android:id="@+id/mother_name"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EXAMINATION LIST"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="@dimen/textSizeTitle"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="2px"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/examination_list_height"
+            android:id="@+id/examination_recyclerview"
+            android:descendantFocusability="blocksDescendants"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</ScrollView>

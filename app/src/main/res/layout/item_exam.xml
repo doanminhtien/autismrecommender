@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:padding="5dp"
+    android:layout_marginBottom="2px"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chẩn đoán tự kỷ lần đầu tiên"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:background="@color/textPrimary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSizeTitle"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/exam_title"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tổng số bài kiểm tra: 1 \n Trạng thái: Đã hoàn thành \n Kết quả: Âm tính \n Ngày làm: 10-10-2016"
+            android:textColor="@color/textPrimary"
+            android:id="@+id/exam_info"/>
+        
+        <ImageButton
+            android:layout_width="@dimen/button_image_height"
+            android:layout_height="@dimen/button_image_height"
+            android:layout_gravity="end|bottom"
+            android:background="@android:drawable/ic_menu_delete"
+            />
+    </FrameLayout>
+
+</LinearLayout>

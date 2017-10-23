@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/doanminhtien/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.4.1.1/c8d96f6fd2bcc179c312da33ee670a71188cc60d/httpclient-4.4.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c8d96f6fd2bcc179c312da33ee670a71188cc60d">
+        <dex dex="/home/doanminhtien/AndroidProject/ChanDoanTuKy/app/build/intermediates/pre-dexed/debug/httpclient-4.4.1.1_5fdfce871eae2ee27fdff99cb937a8cd4f8b914f.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="2dp"
+    android:background="@drawable/for_recommend_solution_item"
+    >
+    <LinearLayout
+        android:layout_width="@dimen/item_recommended_size"
+        android:layout_height="@dimen/recommended_size"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="11sp"
+            android:text="This is the title of the damn thing"
+            android:lines="1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/title_news"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/solution_recommend_title"/>
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="#FFF"
+            android:text="This is the description of the solution that you need to do dsf sdf sdf sdf sdf sdf sdf!!"
+            android:id="@+id/solution_recommend_desc"
+            android:textSize="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="11sp"
+            android:text="Ariana Glamberia"
+            android:lines="1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/contribute_title"
+            android:id="@+id/solution_recommend_contributer"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/for_item_news"
+        android:layout_margin="10dp"
+        android:elevation="3dp"
+        android:padding="0dp"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp">
+
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:padding="3dp">
+                <ImageView
+                    android:background="@drawable/tre_tu_ky_sample"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:padding="6dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/rounded_image"
+                android:id="@+id/news_avatar"/>
+
+
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="This is the title of the damn thing"
+                android:lines="1"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/title_news"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/news_title"/>
+
+            <TextView
+                android:id="@+id/news_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:maxHeight="70dp"
+                android:text="This is the description of the damn thing. For what ever you want to read, please stay calm after reading it othewise you will be dead"
+                android:textSize="13dp"
+                android:textAlignment="gravity"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="6dp"
+                android:text="Read more"
+                android:textSize="10dp"
+                android:gravity="end|center_vertical"
+                android:textColor="@color/textNote"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

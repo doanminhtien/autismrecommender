@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginBottom="3dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tre_tu_ky_sample"
+        android:scaleType="centerCrop"
+        android:id="@+id/item_news_background"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gradient_transparent_background_for_single_post_view_reverse"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gradient_transparent_background_for_single_post_view"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="Hành trình chữa tự kỷ cho con của bà mẹ 30 tuổi"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/item_news_title"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:text="This is the description, it shouldn't be too long because there's no room for text. This is the description, it shouldn't be too long because there's no room for text"
+            android:gravity="bottom"
+            android:textColor="#FFFFFF"
+            android:id="@+id/item_new_desc"/>
+    </LinearLayout>
+
+
+</FrameLayout>

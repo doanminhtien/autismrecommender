@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="60dp"
+            android:paddingTop="50dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="40 people liked this"
+                android:maxLines="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/textPrimary"
+                android:background="@drawable/for_solution_detail_title"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="200dp"
+                android:textSize="15sp"
+                android:id="@+id/likes"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/for_solution_detail_content"
+                android:text="10 people subscribed this solution!"
+                android:textColor="@color/textPrimary"
+                android:textSize="15sp"
+                android:textAlignment="textEnd"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginLeft="200dp"
+                android:id="@+id/subscribles"
+                android:layout_marginTop="15dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Tự chữa tự kỷ cho con bằng phương pháp giao tiếp chủ động với trẻ"
+                android:maxLines="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/textPrimary"
+                android:background="@drawable/for_solution_detail_title"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/title"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:background="@drawable/for_solution_detail_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/textPrimary"
+                android:text="Chào anh chị, hôm nay mình xin phép chia sẻ về cách giảm thiểu triệu chứng cho con của mình. Số là con mình rất kém hoạt động, nó thường chơi một mình, nhiều lúc mình đến mà nó không thèm quan tâm nữa. Mình đã rất lo lắng. Thế rồi mình đưa con đi khám, chẩn đoán theo chuẩn CARS thì con mình bị tự kỷ mức độ vừa, từ đó mình đã cố gắng hết sức để giúp con.
+\n\tPhương pháp của mình là:
+    \n\t\tTại vì con mình rất lười giao tiếp nên mình đã
+    \n\t\tTiếp theo mình đã
+    \n\t\tSau đó mình đã
+\nTừ khi làm theo phương pháp này, mình nhận thấy triệu chứng của con mình cải thiện đáng kể, trong nó có vẻ vui vẻ hơn, không cáu gắt như trước."
+                android:padding="10dp"
+                android:id="@+id/content"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/for_solution_detail_title"
+                    android:text="Like this solution"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:id="@+id/action_like"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:gravity="end"
+                android:layout_marginTop="15dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/for_solution_detail_content"
+                    android:text="Subscribe this solution"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:id="@+id/action_subcribe"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Solution Details"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/textPrimary"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFFFFF">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:weightSum="10"
+        android:background="#FFFFFF">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8.5"
+            android:layout_height="50dp"
+            android:hint="Message to user via email"
+            android:background="#FFFFFF"
+            android:id="@+id/message"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:id="@+id/send_email"/>
+    </LinearLayout>
+
+
+</FrameLayout>

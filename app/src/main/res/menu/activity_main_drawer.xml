@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="News" />
+        <item
+            android:id="@+id/solutions"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Solutions" />
+        <item
+            android:id="@+id/childprofile"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Child Profile" />
+    </group>
+
+    <item android:title="Changes">
+        <menu>
+            <item
+                android:id="@+id/newchild"
+                android:icon="@drawable/ic_menu_share"
+                android:title="New Child" />
+            <item
+                android:id="@+id/newexam"
+                android:icon="@drawable/ic_menu_share"
+                android:title="New Examination" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Switch child" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

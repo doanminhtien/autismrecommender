@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="@dimen/item_child_height"
+        android:layout_height="@dimen/item_child_height"
+        android:padding="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tre_tu_ky_sample"
+            android:id="@+id/child_avatar"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doan Minh Tien"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/textSizeTitle"
+            android:padding="7dp"
+            android:id="@+id/child_name"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngay sinh: 19/09/1995 \n Bo: Doan Minh Tien \n Me: Unknown \n So bai kt da lam: 10"
+                android:textSize="11sp"
+                android:id="@+id/child_short_infor"
+                />
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:gravity="end|bottom">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/child_delete"
+                    android:background="@android:drawable/ic_menu_edit"
+                    android:layout_marginRight="5dp"/>
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/child_update"
+                    android:background="@android:drawable/ic_menu_delete"
+                    />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
